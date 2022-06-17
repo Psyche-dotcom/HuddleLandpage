@@ -1,0 +1,38 @@
+/*Primary color*/
+
+$Pink: hsl(322, 100%, 66%);
+$Very-pale-cyan: hsl(193, 100%, 96%);
+$Very-dark-cyan: hsl(192, 100%, 9%);
+$GrayishBlue: hsl(208, 11%, 55%);
+
+/*Neutral color*/
+
+$para-color: hsla(0, 0%, 100%, 0.75);
+$background-headings-buttons: hsl(0, 0%, 95%);
+
+$large_screen: 900px;
+
+$medium_screen: 650px;
+$medium_screenm: 1000px;
+$medium_screenl: 1300px;
+
+@mixin large {
+  @media (min-width: $large_screen) {
+    @content;
+  }
+}
+@mixin medium {
+  @media (min-width: $medium_screen) {
+    @content;
+  }
+}
+@mixin mmedium {
+  @media (max-width: $medium_screenm) {
+    @content;
+  }
+}
+@mixin lmedium {
+  @media (min-width: $medium_screenl) {
+    @content;
+  }
+}
